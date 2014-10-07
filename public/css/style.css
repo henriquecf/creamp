@@ -245,7 +245,6 @@ textarea.form-control:focus {
 .nav-style .active a,
 .nav-style .active a:focus {
 	background: #051457;
-	text-shadow: 0 1px #f1b728;
 }
 
 .nav > li > a:focus {
@@ -324,10 +323,9 @@ li.dummy.active { /* scrollspy fix */
 
 .profile-figure {
 	display: block;
-	width: 40%;
+	width: 30%;
 	position: absolute;
 	right: 0;
-	bottom: -90px;
 	z-index: -1;
 }
 
@@ -1151,7 +1149,6 @@ li.dummy.active { /* scrollspy fix */
 	}
 	
 	.profile-figure {
-		bottom: -70px;
 	}
 	
 	.qualification-education {
