@@ -552,7 +552,7 @@ li.dummy.active { /* scrollspy fix */
 }
 
 .tl-content {
-	text-align: left;
+	text-align: justify;
 }
 
 /* [ERS] EXTRA STYLE */
