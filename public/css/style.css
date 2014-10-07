@@ -196,7 +196,7 @@ textarea.form-control:focus {
 
 /* [HRS] HEADER STYLE */
 .main-header .navbar {
-	height: 57px;
+	height: 67px;
 	background: #fafafa;
 	border-bottom: 2px solid #eee;
 }
@@ -210,7 +210,7 @@ textarea.form-control:focus {
 }
 
 .logo img {
-	height: 50px;
+	height: 60px;
 	margin-top: 4px;
 }
 
@@ -223,9 +223,9 @@ textarea.form-control:focus {
 .nav-style > li > a:focus {
 	color: #aaa;
     font-family: "Droid Sans", sans-serif;
-    padding: 3px 15px;
+    padding: 9px 15px;
     line-height: 50px;
-    height: 57px;
+    height: 67px;
     border-bottom: 2px solid transparent;
     -moz-transition: all 0.25s;
     -o-transition: all 0.25s;
@@ -1214,7 +1214,7 @@ li.dummy.active { /* scrollspy fix */
 	.navbar-toggle {
 		margin: 0;
 		padding: 0 10px;
-		height: 50px;
+		height: 67px;
 		float: right;
 		line-height: 50px;
 		vertical-align: middle;
