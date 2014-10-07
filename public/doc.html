@@ -1,0 +1,593 @@
+<!DOCTYPE html><html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Resume CV Responsive Template Bootstrap">
+	<meta name="author" content="Juhanda">
+
+	<title>Civi - Responsive Online CV Template</title>
+	
+	<!-- stylesheet -->
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans|Lato|Revalia' rel='stylesheet' type='text/css'><!-- google fonts -->
+	<link href="css/bootstrap.min.css" rel="stylesheet"><!-- bootstrap -->	
+	<link href="css/font-awesome.min.css" rel="stylesheet" media="screen"><!-- font awesome -->
+	<link href="css/magnific-popup.css" rel="stylesheet"><!-- magnific popup -->
+	<link href="style.css" rel="stylesheet"><!-- theme style -->
+	
+	<!-- custom style for documentation only -->
+	<style>
+		.doc {
+			padding: 50px 0;
+		}
+
+		.doc h2 {
+			margin-bottom: 40px;
+		}
+		
+		.doc .inner {
+			padding-top: 60px;
+		}
+		
+		code, pre {
+			border-radius: 2px;
+			-moz-border-radius: 2px;
+			-webkit-border-radius: 2px;
+			background: #eee;
+			border: 0;
+			color: inherit;
+		}
+		
+		b {
+			color: #39b3d7;
+		}
+		
+		.nav-style li {
+			font-size: 16px;
+		}
+	</style>
+	
+	<!-- favicon -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/ico/apple-touch-icon-72-precomposed.png">
+	<link rel="shortcut icon" href="img/ico/favicon.png" >
+	
+	<!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body data-spy="scroll" data-target="#main-nav">
+	<header class="main-header">
+		<!-- master header -->
+		<div class="navbar navbar-fixed-top">
+			<nav class="container" >
+				<!-- site logo -->
+				<div class="navbar-header">
+					<a href="index.htm" class="logo">
+						<img src="img/logo.png" alt="">
+						<h1 class="sr-only">CIVI</h1>
+					</a>
+					
+					<button type="button" class="navbar-toggle navbar-right" data-toggle="collapse" data-target="#main-nav">
+						<i class="fa fa-bars"></i>
+					</button>
+				</div>
+				
+				<!-- main navigation -->
+				<div id="main-nav" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-right nav-style">
+						<li><a href="#doc">Documentation Page</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div><!-- .container -->
+	</header>
+	
+	<div id="doc" class="doc">
+		<div class="container">
+			<div id="figure" class="inner">
+				<h3 class="heading">Figure Image</h3>
+				<p>Feature image placed on top section, named <code>id="hero"</code>, is representing you as website owner. The image itself is adjusted by <code>class="hero-figure"</code> for medium to large screen width and <code>class="hero-figure-res"</code> for smaller screen width. See illustration below:</p>
+				
+				<div class="row">
+					<div style="margin-bottom: 20px;" class="col-md-4 text-center">
+						<p>Medium to large screen width - <i>&gt;&gt; 992px</i></p>
+						<p><a class="image-link" href="img/media/md-screen.png"><img style="display: inline-block; max-width: 100%;" src="img/media/md-screen.png" alt=""></a></p>
+					</div>
+					<div style="margin-bottom: 20px;" class="col-md-4 text-center">
+						<p>Small screen width - <i>&gt;&gt; 768px</i> and <i>&lt; 992px</i></p>
+						<p><a class="image-link" href="img/media/sm-screen.png"><img style="display: inline-block; max-width: 100%;" src="img/media/sm-screen.png" alt=""></a></p>
+					</div>
+					<div style="margin-bottom: 20px;" class="col-md-4 text-center">
+						<p>Extra small screen width - <i>&lt; 768px</i></p>
+						<p><a class="image-link" href="img/media/xs-screen.png"><img style="display: inline-block; max-width: 100%;" src="img/media/xs-screen.png" alt=""></a></p>
+					</div>
+				</div>
+				
+				<p>It calls three different images to be shown so it is recommended to provide your own three different images for those arrangements. Edit index file as well as the style and set the rule of style as you need:</p>
+<pre>
+<b>// find these lines in index.htm</b>
+
+...
+
+&lt;img class="hero-figure" src="img/yourimage.jpg" alt=""&gt; <b>// set your image here</b> 
+&lt;div class="hero-figure-res"&gt;&lt;/div&gt; <b>// set image by changing background url in .figure-res</b> 
+
+...
+
+
+<b>// add the style on head element or change directly on style.css</b>
+
+.hero-figure {
+	
+  <b>-- adjust your image dimension and position --</b>
+	
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) { <b>// small screen size</b>
+  .hero-figure-res {
+    --
+    background: url( .. ) center; <b>// set and center your image, recommended dimension 300 x 300</b>
+    --
+  }
+}
+
+@media screen and (max-width: 767px) { <b>// extra small screen size</b>
+  .hero-figure-res {
+    --
+    background: url( .. ) center; <b>// set and center your image, recommended dimension 100 x 100</b>
+    --
+  }
+}
+</pre>				
+				<p style="margin-top: 20px;">To change the background, you can edit <code>class="hero"</code>.</p>
+<pre>
+<b>// add the style on head element or change it directly on style.css</b>
+
+.hero {
+  background: url(...); <b>// set your background image</b>
+}
+</pre>
+			</div>
+			
+			<div id="knob" class="inner">
+				<h3 class="heading">Skill point visual graphic</h3>
+				
+				<p>The rounded graphic in <code>id="skill"</code> section is generated by <a target="_blank" href="http://anthonyterrien.com/knob/">knob jquery plugin</a>. The mark-up used in this template as like:</p>
+	
+<pre>
+&lt;input type="text" value="55" class="dial" &gt; <b>// change the value of "value" attribute as you need</b>
+
+<br>
+
+<input type="text" value="55" class="dial">
+</pre>
+				
+				<p>For richer application of this amazing plugin, please refer to the developer's guide.</p>
+			</div>
+			
+			<div id="timeline" class="inner">
+				<h3 class="heading">Timeline</h3>
+				
+				<p>Below is the structure of timeline feature. It is recommended to follow this default structure because the elements and classes are depend each other.</p>
+				
+<pre>
+&lt;ul class="timeline"&gt;
+  &lt;li class="year top"&gt; <b>// year presentation, add class .top for the top year box only</b>
+    &lt;span&gt;The Year&lt;/span&gt;
+  &lt;/li&gt;
+	
+  &lt;li&gt; <b>// left floated timeline box</b>
+    &lt;div class="tl-header"&gt;
+      &lt;h3 class="tl-role"&gt;Your Role&lt;/h3&gt;
+      &lt;h4 class="tl-company"&gt;Institution&lt;/h4&gt;
+      &lt;span class="tl-time"&gt;Span of time&lt;/span&gt;
+    &lt;/div&gt;
+		
+    &lt;p class="tl-content"&gt;Content here...&lt;/p&gt;
+		
+    &lt;img class="tl-img" src="img/thumb/thumb-3.jpg" alt=""&gt;
+  &lt;/li&gt;
+
+  &lt;li class="right present"&gt; <b>// right floated timeline box, added class .right // add .present class to dot marker alternatif</b>
+    &lt;div class="tl-header"&gt;
+      &lt;h3 class="tl-role"&gt;Your Role&lt;/h3&gt;
+      &lt;h4 class="tl-company"&gt;Institution&lt;/h4&gt;
+      &lt;span class="tl-time"&gt;Span of time&lt;/span&gt;
+    &lt;/div&gt;
+		
+    &lt;p class="tl-content"&gt;Content here...&lt;/p&gt;
+		
+    &lt;img class="tl-img" src="img/thumb/thumb-3.jpg" alt=""&gt;
+  &lt;/li&gt;
+	  
+  &lt;li class="year"&gt; <b>// next year box</b>
+    &lt;span&gt;The Year&lt;/span&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+				<ul class="timeline">
+					<li class="year top">
+						<span>The Year</span>
+					</li>
+					
+					<li>
+						<div class="tl-header">
+							<h3 class="tl-role">Your Role</h3>
+							<h4 class="tl-company">Institution</h4>
+							<span class="tl-time">Span of time</span>
+						</div>
+						
+						<p class="tl-content">Content here...</p>
+						
+						<img class="tl-img" src="img/thumb/thumb-3.jpg" alt="">
+					</li>
+
+					<li class="right present">
+						<div class="tl-header">
+							<h3 class="tl-role">Your Role</h3>
+							<h4 class="tl-company">Institution</h4>
+							<span class="tl-time">Span of time</span>
+						</div>
+						
+						<p class="tl-content">Content here...</p>
+						
+						<img class="tl-img" src="img/thumb/thumb-3.jpg" alt="">
+					</li>
+					
+					<li class="year">
+						<span>The Year</span>
+					</li>
+				</ul>
+				
+				<p style="margin-top: 20px;">If by some cases you find your timeline box overlapping like this:</p>
+				
+				<ul class="timeline">
+					<li class="year top">
+						<span>The Year</span>
+					</li>
+					
+					<li>
+						<div class="tl-header">
+							<h3 class="tl-role">Your Role</h3>
+							<h4 class="tl-company">Institution</h4>
+							<span class="tl-time">Span of time</span>
+						</div>
+						
+						<p class="tl-content">Content here...</p>
+					</li>
+
+					<li class="present">
+						<div class="tl-header">
+							<h3 class="tl-role">Your Role</h3>
+							<h4 class="tl-company">Institution</h4>
+							<span class="tl-time">Span of time</span>
+						</div>
+						
+						<p class="tl-content">Content here...</p>
+						
+						<img class="tl-img" src="img/thumb/thumb-3.jpg" alt="">
+					</li>
+				</ul>
+				
+				<p>Just add class <code>.break</code> to the <code>&lt;li&gt;</code> element of the overlapping box.</p>
+<pre>
+...
+
+&lt;li class="present break"&gt; <b>// overlapping box, add .break class to fix </b>
+  &lt;div class="tl-header"&gt;
+    &lt;h3 class="tl-role"&gt;Your Role&lt;/h3&gt;
+    &lt;h4 class="tl-company"&gt;Institution&lt;/h4&gt;
+    &lt;span class="tl-time"&gt;Span of time&lt;/span&gt;
+  &lt;/div&gt;
+						
+  &lt;p class="tl-content"&gt;Content here...&lt;/p&gt;
+						
+  &lt;img class="tl-img" src="img/thumb/thumb-3.jpg" alt=""&gt;
+&lt;/li&gt;
+
+...
+</pre>
+				
+				<ul class="timeline">
+					<li class="year top">
+						<span>The Year</span>
+					</li>
+					
+					<li>
+						<div class="tl-header">
+							<h3 class="tl-role">Your Role</h3>
+							<h4 class="tl-company">Institution</h4>
+							<span class="tl-time">Span of time</span>
+						</div>
+						
+						<p class="tl-content">Content here...</p>
+					</li>
+
+					<li class="present break">
+						<div class="tl-header">
+							<h3 class="tl-role">Your Role</h3>
+							<h4 class="tl-company">Institution</h4>
+							<span class="tl-time">Span of time</span>
+						</div>
+						
+						<p class="tl-content">Content here...</p>
+						
+						<img class="tl-img" src="img/thumb/thumb-3.jpg" alt="">
+					</li>
+				</ul>
+			</div>
+			
+			<div id="gallery" class="inner">
+				<h3 class="heading">Gallery</h3>
+				<p>The gallery feature is generated by <a href="http://mixitup.io/" target="_blank">mixitup plugin</a> to filter the categories and <a href="http://dimsemenov.com/plugins/magnific-popup/" target="_blank">magnific popup plugin</a> to make lightbox image presentation. The mark-up is below:</p>
+<pre>
+<b>// control for mixitup plugin</b>
+&lt;div class="gallery-control"&gt;
+  &lt;ul class="list-inline list-unstyled"&gt;
+    &lt;li class="filter active" data-filter="all"&gt;&lt;span&gt;All&lt;/span&gt;&lt;/li&gt;
+    &lt;li&gt;|&lt;/li&gt;
+    &lt;li class="filter" data-filter="cat-1"&gt;&lt;span&gt;Web&lt;/span&gt;&lt;/li&gt; <b>// define the category within data-filter attribute</b>
+    &lt;li &gt;|&lt;/li&gt;
+    &lt;li class="filter" data-filter="cat-2"&gt;&lt;span&gt;Design&lt;/span&gt;&lt;/li&gt;
+    &lt;li&gt;|&lt;/li&gt;
+    &lt;li class="filter" data-filter="cat-3"&gt;&lt;span&gt;Flash&lt;/span&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id="grid" class="row gallery-inner"&gt;
+  &lt;div class="col-md-4 col-sm-6 mix mix_all cat-1"&gt; <b>// place the category as needed for every item</b>
+    &lt;div class="gallery-frame"&gt;
+      &lt;a class="image-link" href="img/gallery/gal-img-1.jpg"&gt;&lt;img src="img/gallery/gal-img-1.jpg" alt=""&gt;&lt;/a&gt; <b>// the mark-up for magnific popup </b>
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="col-md-4 col-sm-6 mix mix_all cat-2"&gt;
+    &lt;div class="gallery-frame"&gt;
+      &lt;a class="image-link" href="img/gallery/gal-img-2.jpg"&gt;&lt;img src="img/gallery/gal-img-2.jpg" alt=""&gt;&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+    &lt;div class="col-md-4 col-sm-6 mix mix_all cat-3 cat-1"&gt;
+      &lt;div class="gallery-frame"&gt;
+        &lt;a class="image-link" href="img/gallery/gal-img-3.jpg"&gt;&lt;img src="img/gallery/gal-img-3.jpg" alt=""&gt;&lt;/a&gt;
+      &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+<b>// to initialize lightbox image presentation, just follow this mark-up</b>
+
+&lt;a class="image-link" href="actual img"&gt;&lt;img src="thumb img" alt=""&gt;&lt;/a&gt;
+
+
+<b>// you can add more than one gallery section, just define the 'id' and initialize it with style and script below</b>
+
+#your-id .mix { <b>// these rules is required by mixitup plugin</b>
+  opacity: 0;
+  display: none;
+}
+
+$("#your-id").mixitup(); <b>// init the plugin</b>
+</pre>
+
+				<p>There are many cool things that you can make with mixitup plugin and magnific popup, please check what they are provide on their homepage.</p> 
+			</div>
+			<div id="toggle" class="inner">
+				<h3 class="heading">Toggle & Accordion</h3>
+				
+				<p>The feature of toggle collapse and accordion is using the origin bootstrap javascript function, but with slightly modified mark-up. For simple collapse toggle, check mark-up below:</p>
+<pre>
+&lt;div class="togglize"&gt;
+  &lt;div class="togglize-wrap"&gt;
+    &lt;a class="togglize-btn" data-toggle="collapse" href="#toggle-1"&gt;
+      Toggle
+      &lt;span class="pull-right togglize-mark"&gt;&lt;i class="fa fa-fw fa-angle-right"&gt;&lt;/i&gt;&lt;/span&gt; <b>// please keep this line as this is required for marker status</b>
+    &lt;/a&gt;
+    &lt;div id="toggle-1" class="togglize-content collapse"&gt;
+      
+	  -- your content here --
+	  
+    &lt;/div&gt;
+  &lt;/div&gt;
+							
+  &lt;div class="togglize-wrap"&gt;
+    &lt;a class="togglize-btn" data-toggle="collapse" href="#toggle-2"&gt;
+      Toggle
+      &lt;span class="pull-right togglize-mark"&gt;&lt;i class="fa fa-fw fa-angle-right"&gt;&lt;/i&gt;&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;div id="toggle-2" class="togglize-content collapse"&gt;
+      
+	  -- your content here --
+	  
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+				<div style="width: 210px;" class="togglize">
+					<div class="togglize-wrap">
+								
+								<a class="togglize-btn" data-toggle="collapse" href="#toggle-1">
+									Toggle
+									<span class="pull-right togglize-mark"><i class="fa fa-fw fa-angle-right"></i></span>
+								</a>
+								
+								<div id="toggle-1" class="togglize-content collapse">
+									-- your content here --
+								</div>
+							</div>
+							
+							<div class="togglize-wrap">
+								<a class="togglize-btn" data-toggle="collapse" href="#toggle-2">
+									Toggle
+									<span class="pull-right togglize-mark"><i class="fa fa-fw fa-angle-right"></i></span>
+								</a>
+								
+								<div id="toggle-2" class="togglize-content collapse">
+									-- your content here --
+								</div>
+							</div>
+				</div>
+				
+				<p style="margin-top: 20px;">To give accordion effect, please check mark-up below:</p>
+				
+<pre>
+&lt;div id="accordion" class="togglize panel-group"&gt; <b>// define the id, give .panel-group class</b>
+  &lt;div class="panel togglize-wrap"&gt; <b>// give .panel class here</b>
+    &lt;a class="togglize-btn" data-toggle="collapse" data-parent="#accordion" href="#accord-1"&gt; <b>// include data-parent refer to the parent id</b>
+      Accordion
+      &lt;span class="pull-right togglize-mark"&gt;&lt;i class="fa fa-fw fa-angle-right"&gt;&lt;/i&gt;&lt;/span&gt; <b>// please keep this line as this is required for marker status</b>
+    &lt;/a&gt;
+    &lt;div id="accord-1" class="panel-collapse togglize-content collapse"&gt; <b>// give .panel-collapse class here</b>
+      
+	  -- your content here --
+	  
+    &lt;/div&gt;
+  &lt;/div&gt;
+							
+  &lt;div class="panel togglize-wrap"&gt;
+    &lt;a class="togglize-btn" data-toggle="collapse" data-parent="#accordion" href="#accord-2"&gt;
+      Accordion
+      &lt;span class="pull-right togglize-mark"&gt;&lt;i class="fa fa-fw fa-angle-right"&gt;&lt;/i&gt;&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;div id="accord-2" class="panel-collapse togglize-content collapse"&gt;
+      
+	  -- your content here --
+	  
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+				<div id="accordion" style="width: 210px;" class="togglize panel-group">
+					<div class="panel togglize-wrap">
+						<a class="togglize-btn" data-toggle="collapse" data-parent="#accordion" href="#accord-1">
+							Accordion
+							<span class="pull-right togglize-mark"><i class="fa fa-fw fa-angle-right"></i></span>
+						</a>
+						
+						<div id="accord-1" class="panel-collapse togglize-content collapse">
+							-- your content here --
+						</div>
+					</div>
+					
+					<div class="panel togglize-wrap">
+						<a class="togglize-btn" data-toggle="collapse" data-parent="#accordion" href="#accord-2">
+							Accordion
+							<span class="pull-right togglize-mark"><i class="fa fa-fw fa-angle-right"></i></span>
+						</a>
+						
+						<div id="accord-2" class="panel-collapse togglize-content collapse">
+							-- your content here --
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="googlemap" class="inner">
+				<h3 class="heading">Google Map</h3>
+				
+				<p>To change the map location and the marker, you have to edit the <code>data-map-*</code> attributes shown below.</p>
+<pre>
+&lt;div id="map" 
+  
+  data-map-lat="48.856614"  <b>// map latitude</b> 
+  data-map-lng="2.352222"  <b>// map longitude</b> 
+  data-map-mark="Suite 9/13 South Mahana Montebello 1236 WA" <b>// map marker</b> 
+  data-map-zoom="15" <b>// map zoom</b>
+	
+&gt;&lt;/div&gt;
+</pre>
+			</div>
+			
+			<div id="twitter-feeds" class="inner">
+				<h3 class="heading">Twitter Feeds</h3>
+				
+				<p>The twitter feeds widget implementation is generated by <a href="http://jasonmayes.com/projects/twitterApi/">jason mayes's twitter fetcher</a> script. To use, you have to firstly get your own widget id that can be found in twitter widgets page. Check the widget creation url and find the line like this <i>" data-widget-id="393276115713654784" "</i>. The numbers is your id.</p>
+			
+				<p>After you get the id, place it on template's <code>data-widget-id</code> then specify the value of <code>data-length</code> to display the numbers of tweets that you want returned. The value must be between 1 to 20.</p>
+			
+				<pre>
+&lt;div id="twitter-widget" class="twitter-widget" 
+  
+  data-length="3" <b>// number of tweets you want returned</b>
+  data-widget-id="410264841895424000" <b>// twitter widget id</b>
+  
+&gt;&lt;/div&gt;
+				</pre>
+			</div>
+			
+			<div id="contact-form" class="inner">
+				<h3 class="heading">Contact Form</h3>
+				
+				<p>Contact form is using php <code>mail()</code> function, so make sure the function is available and active. Open <code>includes/mail.php</code> then change the variables to suit your need.</p>
+<pre>
+  define("RECIPIENT_NAME", "Your Name"); <b>// specify the receiver name</b>
+  define("RECIPIENT_EMAIL", "youremail@domain.com"); <b>// specify the receiver email</b>
+  define("EMAIL_SUBJECT", "Visitor Message"); <b>// specify the subject of message</b>
+  
+  ...
+</pre>
+			</div>
+			
+			<div id="credit" class="inner">
+				<h3 class="heading">Credits</h3>
+				
+				<p>Many thanks to these amazing parties, without them this work will never be made.</p>
+				
+				<p>
+					<a href="http://getbootstrap.com/" target="_blank">Bootstrap</a><br>
+					<a href="http://jquery.com/" target="_blank">jQuery</a><br>
+				</p>
+				
+				<p>
+					Page Scroll by <a href="http://flesler.com/jquery/scrollTo/" target="_blank">jQuery ScrollTo</a><br>
+					Lightbox by <a href="http://dimsemenov.com/plugins/magnific-popup/" target="_blank">Magnific Popup</a><br>
+					Filter by <a href="http://mixitup.io/" target="_blank">MixItUp</a><br>
+					Map by <a href="http://hpneo.github.io/gmaps/" target="_blank">Gmaps</a><br>
+					Round Graphic by <a href=" http://anthonyterrien.com/knob/" target="_blank">Knob</a><br>
+					Validation by <a href="http://parsleyjs.org/" target="_blank">Parsley</a><br>
+					Twitter Feeds by <a href="http://jasonmayes.com/projects/twitterApi/" target="_blank">Twitter Fetcher</a><br>
+				</p>
+				
+				<p>
+					Icon by <a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome</a><br>
+					Fonts by <a href="http://www.google.com/fonts" target="_blank">Google Fonts</a><br>
+					Images by <a href="http://pixabay.com/en/" target="_blank">Pixabay</a><br>
+					Mock Up by <a href="http://dribbble.com/shots/984042-iPhone-iPad-Freebie-rebound-Thunderbolt" target="_blank">Corey Michaud</a><br>
+				</p>
+				
+				<p>Plugins, images, icons, etc., used in this template is copyrighted to respective owners and it comes under their license.</p>
+					
+				
+				
+			</div>
+			
+		</div><!-- .container -->
+	</div>
+	<!-- doc end -->
+	
+	<footer class="main-footer">
+		<div class="container">				
+			<span class="copyright">All Rights Reserved © 2014.</span>
+		</div>
+	</footer>
+	
+	<!-- javascript -->
+	<script src="js/jquery-1.10.2.min.js"></script><!-- jquery -->
+	<script src="http://maps.google.com/maps/api/js?sensor=true"></script><!-- google map api -->
+	<script src="js/bootstrap.min.js"></script><!-- bootstrap js -->
+	<script src="js/jquery.knob.js"></script><!-- knob -->
+	<script src="js/jquery.magnific-popup.min.js"></script><!-- magnific popup -->
+	<script src="js/jquery.scrollTo-1.4.3.1-min.js"></script><!-- scrollto -->
+	<script src="js/jquery.localscroll-1.2.7-min.js"></script><!-- localscroll -->
+	<script src="js/jquery.mixitup.min.js"></script><!-- mixitup -->
+	<script src="js/gmaps.js"></script><!-- gmaps -->
+	<script src="js/twitterFetcher_v10_min.js"></script>
+	<script src="js/parsley.min.js"></script>
+	<script src="js/custom-doc.js"></script><!-- custom -->
+
+	</body></html>
