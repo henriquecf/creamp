@@ -1,9 +1,9 @@
 <?php
 
 // define constants
-define("RECIPIENT_NAME", "Your Name");
-define("RECIPIENT_EMAIL", "youremail@domain.com");
-define("EMAIL_SUBJECT", "Visitor Message");
+define("RECIPIENT_NAME", "Francisco Almeida");
+define("RECIPIENT_EMAIL", "eleicao2014@franciscoalmeidacrea.com.br");
+define("EMAIL_SUBJECT", "Contato pelo Site");
 
 // read form values
 $send = false;
