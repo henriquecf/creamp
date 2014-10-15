@@ -13,8 +13,8 @@ Mail.defaults do
 end
 
 Mail.deliver do
-  to 'elo.henrique@gmail.com'
-  from 'sender@example.comt'
+  to 'ivan.eng.controle@gmail.com'
+  from 'sender@example.com'
   subject 'Contato pelo Site CREA Mais Profissional'
   body 'Sending email with Ruby through SendGrid!'
 end
