@@ -35,9 +35,9 @@ map '/mail' do
       begin
         Mail.deliver do
           to 'ivan.eng.controle@gmail.com'
-          from 'sender@example.com'
+          from "#{request.params['name']}<#{request.params['email']}>"
           subject 'Contato pelo Site CREA Mais Profissional'
-          body 'Sending email with Ruby through SendGrid!'
+          body request.params['message']
         end
       rescue
         [200, {'Content-Type' => 'text/plain'}, ['error']]
