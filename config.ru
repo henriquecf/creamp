@@ -34,7 +34,7 @@ map '/mail' do
     when 'POST'
       begin
         Mail.deliver do
-          to 'ivan.eng.controle@gmail.com'
+          to 'eleicaocrea2014@gmail.com'
           from "#{request.params['name']}<#{request.params['email']}>"
           subject 'Contato pelo Site CREA Mais Profissional'
           body request.params['message']
