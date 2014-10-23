@@ -20,14 +20,16 @@
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/ico/apple-touch-icon-114-precomposed.png">
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/ico/apple-touch-icon-72-precomposed.png">
 	<link rel="shortcut icon" href="img/favicon.png" >
-	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+  <script src="js/myApp.js"></script>
+	<script src="js/photosCtrl.js"></script>
+  <!-- custom -->
 	<!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
 </head>
-
-<body data-spy="scroll" data-target="#main-nav">
+<body data-spy="scroll" data-target="#main-nav" ng-app="myApp">
 
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -224,1044 +226,102 @@
 	<!-- experience section end -->
 	
 	<!-- qualification section -->
-	<section id="propostas" class="qualification">
-		<div class="container">
-		
-			
-		
-			<!-- gallery -->
-			<div class="gallery">
-				<h2 class="heading">Propostas</h2>
-				
-				<!-- div class="gallery-control">
-					<ul class="list-inline list-unstyled">
-						<li class="filter active" data-filter="all"><span>Todas</span></li>
-						<li>|</li>
-						<li class="filter" data-filter="cat-1"><span>Web</span></li>
-						<li >|</li>
-						<li class="filter" data-filter="cat-2"><span>Design</span></li>
-						<li>|</li>
-						<li class="filter" data-filter="cat-3"><span>Flash</span></li>
-					</ul>
-				</div -->
-				
-				<div id="grid" class="row gallery-inner">
-					<div class="col-md-4 col-sm-6 mix mix_all cat-1">
-						<div class="gallery-frame">
-							<a data-toggle="modal" data-target="#p01"><img src="img/propostas/card_face_01.png" alt=""></a>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 mix mix_all cat-1">
-						<div class="gallery-frame">
-							<a data-toggle="modal" data-target="#p02"><img src="img/propostas/card_face_02.png" alt=""></a>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 mix mix_all cat-1">
-						<div class="gallery-frame">
-							<a data-toggle="modal" data-target="#p03"><img src="img/propostas/card_face_03.png" alt=""></a>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 mix mix_all cat-1">
-						<div class="gallery-frame">
-							<a data-toggle="modal" data-target="#p04"><img src="img/propostas/card_face_04.png" alt=""></a>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 mix mix_all cat-1">
-						<div class="gallery-frame">
-							<a data-toggle="modal" data-target="#p05"><img src="img/propostas/card_face_05.png" alt=""></a>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 mix mix_all cat-1">
-						<div class="gallery-frame">
-							<a data-toggle="modal" data-target="#p06"><img src="img/propostas/card_face_06.png" alt=""></a>
-						</div>
-					</div>
-					
-					<div class="col-md-4 col-sm-6 mix mix_all cat-1">
-						<div class="gallery-frame">
-							<a data-toggle="modal" data-target="#p08"><img src="img/propostas/card_face_08.jpg" alt=""></a>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 mix mix_all cat-1">
-						<div class="gallery-frame">
-							<a data-toggle="modal" data-target="#p09"><img src="img/propostas/card_face_09.jpg" alt=""></a>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 mix mix_all cat-1">
-						<div class="gallery-frame">
-							<a data-toggle="modal" data-target="#p10"><img src="img/propostas/card_face_10.jpg" alt=""></a>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 mix mix_all cat-1">
-						<div class="gallery-frame">
-							<a data-toggle="modal" data-target="#p11"><img src="img/propostas/card_face_11.png" alt=""></a>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 mix mix_all cat-1">
-						<div class="gallery-frame">
-							<a data-toggle="modal" data-target="#p12"><img src="img/propostas/card_face_12.png" alt=""></a>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 mix mix_all cat-1">
-						<div class="gallery-frame">
-							<a data-toggle="modal" data-target="#p13"><img src="img/propostas/card_face_13.png" alt=""></a>
-						</div>
-					</div>
-					
-					<div class="col-md-4 col-sm-6 mix mix_all cat-1">
-						<div class="gallery-frame">
-							<a data-toggle="modal" data-target="#p15"><img src="img/propostas/card_face_15.png" alt=""></a>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 mix mix_all cat-1">
-						<div class="gallery-frame">
-							<a data-toggle="modal" data-target="#p16"><img src="img/propostas/card_face_16.png" alt=""></a>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 mix mix_all cat-1">
-						<div class="gallery-frame">
-							<a data-toggle="modal" data-target="#p17"><img src="img/propostas/card_face_17.png" alt=""></a>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 mix mix_all cat-1">
-						<div class="gallery-frame">
-							<a data-toggle="modal" data-target="#p18"><img src="img/propostas/card_face_18.png" alt=""></a>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 mix mix_all cat-1">
-						<div class="gallery-frame">
-							<a data-toggle="modal" data-target="#p19"><img src="img/propostas/card_face_19.png" alt=""></a>
-						</div>
-					</div>
-					
-      			</div>
-			<!-- gallery end -->
-		</div><!-- .container -->
-	</section>
+  <section id="propostas" class="qualification">
+    <div class="container">
+
+
+
+      <!-- gallery -->
+      <div class="gallery">
+        <h2 class="heading">Propostas</h2>
+
+        <!-- div class="gallery-control">
+        <ul class="list-inline list-unstyled">
+        <li class="filter active" data-filter="all"><span>Todas</span></li>
+        <li>|</li>
+        <li class="filter" data-filter="cat-1"><span>Web</span></li>
+        <li >|</li>
+        <li class="filter" data-filter="cat-2"><span>Design</span></li>
+        <li>|</li>
+        <li class="filter" data-filter="cat-3"><span>Flash</span></li>
+        </ul>
+        </div -->
+
+        <div id="grid" class="row gallery-inner" ng-controller="proposalsCtrl">
+          <div class="col-md-4 col-sm-6 mix mix_all cat-1" ng-repeat="photo in photos">
+            <div class="gallery-frame">
+              <a data-toggle="modal" data-target="#p{{photo.id}}"><img src="{{photo.image_url}}" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- gallery end -->
+    <!-- .container -->
+  </section>
 	<!-- qualification section end -->
 
 <!-- Modal das Propostas -->
-<div class="modal fade" id="p01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">Programa CREA no seu celular</h4>
-      </div>
-      <div class="modal-body">
-        <p>Desenvolvimento de aplicativo para smartphone, direcionado aos profissionais das
-        modalidades vinculadas ao Sistema Confea/Crea, com as seguintes finalidades: 
-        Registro de senha; Preenchimento de ARTs; Correções de ARTs, Relatório de 
-        Ocorrência, Auto de Infração, andamento de processos. 
-        Implantar a solicitação de visto e Certidões de Acervo Técnico online;
-        Serviços online, requerimento digital, boleto de taxas, juntada de documentação 
-        digitalizada;
-        </p>
-        <p>
-        Oferecer a assinatura eletrônica dos profissionais: com cadastramento na Sede e nas 
-        Inspetorias (Casas da Engenharia).
-        </p>
+    <div ng-controller="proposalsCtrl">
+      <div class="modal fade" id="p{{photo.id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" ng-repeat="photo in photos">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+              <h4 class="modal-title" id="myModalLabel">{{photo.title}}</h4>
+            </div>
+            <div class="modal-body">
+              <pre>{{photo.description}}</pre>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-
-<div class="modal fade" id="p02" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">CREA + Profissional</h4>
-      </div>
-      <div class="modal-body">
-        Criação do Portal CREA + PROFISSIONAL.<br>
-        Serviços e informações online.
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="p03" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">Criação das casas da Engenharia</h4>
-      </div>
-      <div class="modal-body">
-        <p>• “CASAS DA ENGENHARIA.<br>
-        Nova nomenclatura para as atuais Inspetorias a fim de dar uma maior visibilidade ao
-        profissional, com participação real dos inspetores na fiscalização e na representação 
-        política institucional da região.</p>
-
-        <p>• Programa de Desenvolvimento Sustentável do CONFEA.<br>
-
-        Construir novas Inspetorias de acordo com o critérios estabelecidos pelo Plenário do 
-        Crea-GO, com base em número de profissionais, localização, distância e população a 
-        ser atendida.</p>
-        
-        <p>• Adaptar instalações das atuais Inspetorias.<br>
-
-        Para que as mesmas possam desempenhar, não só sua função administrativa, mas 
-        também seu papel institucional e técnico, atraindo entidades e profissionais de todas 
-        as áreas.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="p04" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">Programa Inspetor Presente</h4>
-      </div>
-      <div class="modal-body">
-        <p>• “Inspetor Presente”.<br>
-        Reativar e ampliar o programa “Inspetor Presente”, com a participação do Conselho 
-        Consultivo e dos funcionários das Inspetorias.
-        </p>
-        
-        <p>• Fomento da ação institucional.<br>
-        Apoiar e Incentivar os Inspetores na participação dos Conselhos Temáticos e na 
-        discussão das demandas relacionada ao meio ambiente, trânsito e transporte, 
-        infraestrutura urbana e rural, resíduos sólido, agricultura, saneamento básico e outros 
-        temas relacionados com o desenvolvimento sustentável do município.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="p05" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">CREA + Júnior / Jovem</h4>
-      </div>
-      <div class="modal-body">
-        <p>• Novos Cursos.<br>
-        Criar um canal constante de comunicação, com assessoria exclusiva, para 
-        estabelecer parcerias nos registros de novos cursos.
-        </p>
-        <p>• Estudantes.<br>
-        Promover o CREA-JÚNIOR, apoiando suas iniciativas, palestras, eventos técnicos e 
-        culturais na capital e interior.
-        </p>
-        <p>• Conselho Consultivo CREA Júnior.<br>
-        Criar um Conselho Consultivo do CREA-JÚNIOR, com representantes das Instituição de 
-        Ensino.
-        </p>
-        <p>• Apoio à Pesquisa.<br>
-        Patrocinar a criação e divulgação de trabalhos científicos de interesse da sociedade 
-        voltados para o desenvolvimento sustentável.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="p06" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">CREA + Cursos</h4>
-      </div>
-      <div class="modal-body">
-          <p>•Entidades de Classe.<br>
-          Trabalho conjunto com as Entidades de Classe para capacitação técnica dos 
-          profissionais e o fortalecimento dessas instituições perante os associados e a 
-          sociedade.
-          </p>
-          <p>• Empresas.<br>
-          Realizar parcerias e convênios com as Entidades de Classe Empresariais: AGE, 
-          SINDUSCOM, ADEMI, dentre outras, promovendo eventos técnicos de aprimoramento 
-          tecnológico e de desenvolvimento sustentável para a classe.
-          </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="modal fade" id="p08" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">Prêmio CREA Goiás de Meio Ambiente</h4>
-      </div>
-      <div class="modal-body">
-        <p>• PRÊMIO CREA GOIÁS DE MEIO AMBIENTE.<br>
-        Reestruturar, ampliar e modernizar o PRÊMIO CREA GOIÁS DE MEIO AMBIENTE.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="p09" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">Programa Cidade Verde</h4>
-      </div>
-      <div class="modal-body">
-        <p>• PROGRAMA CIDADE VERDE.<br>
-        Instituir o PROGRAMA CIDADE VERDE, nos municípios Goianos, oferecendo projetos 
-        e assessoria técnica, visando a instalação de um "Viveiro Cerrado", desenvolvendo 
-        pesquisas com orientação técnica, em parceria com as prefeituras, visando a 
-        arborização urbana e a recuperação de áreas públicas degradadas ou em processo 
-        de degradação, recomposição florística das áreas de captação de água, bem como 
-        conscientizar os gestores e a população da importância de uma cultura sócio 
-        ambiental em prol do desenvolvimento sustentável.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="p10" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">CREA mais forte no Legislativo</h4>
-      </div>
-      <div class="modal-body">
-        <p>• Assessoria Parlamentar.<br>
-        Estruturar a Assessoria Parlamentar com o objetivo de propor, acompanhar e influir 
-        nos projetos de lei de interesse da área tecnológica e da sociedade, em tramitação no 
-        poder Legislativo.
-        </p>
-        <p>• APL.<br>
-        Apoiar o poder público no desenvolvimento de Arranjos Produtivos Locais (APL).
-        </p>
-        <p>• Engenharia e Agronomia Públicas.<br>
-        Desenvolver ações de participação do profissional para a população de baixa renda.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="p11" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">CREA + Social</h4>
-      </div>
-      <div class="modal-body">
-        <p>•Defesa do Consumidor.<br>
-        Estruturar a Assessoria de Defesa do Consumidor, promovendo soluções amigáveis 
-        entre o profissional e seus clientes, quando houver ocorrências de litígios entre as 
-        partes.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="p12" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">CREA + Tecnológico</h4>
-      </div>
-      <div class="modal-body">
-        <p>• “MINUTO CREA”.<br>
-          Criar um programa de rádio na Capital e Interior;</p>
-        
-        <p>• Criação de programa para TV Web.<br>
-        Ampliação das Atividades da Tv Web do Crea-GO, com matérias informativas 
-        de valorização profissional e realização de entrevistas e debates de interesse da 
-        sociedade;
-        </p>
-
-        <p>• Reformular o website do Crea-GO
-        no formato mais moderno e funcional, para atender os objetivos de comunicação 
-        social da instituição;
-        </p>
-        
-        <p>• Abertura de novos canais de comunicação 
-        envolvendo profissionais e a sociedade em geral, através da utilização de aplicativos 
-        como whatsapp, webchat, etc.,além de maior interação com as redes sociais;
-        </p>
-        
-        <p>• Comunicação Institucional. <br>
-        Campanha permanente em jornais, rádios e TVs de valorização profissional, dando 
-        ênfase à todas as categorias profissionais da área tecnológica.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="p13" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">CREA + Mútua</h4>
-      </div>
-      <div class="modal-body">
-        <p>• Representação nas Inspetorias.<br>
-          Instituir uma representação da Mútua-Go nas Inspetorias.</p>
-        <p>• Programa Trainee/Estágios.<br>
-        Criar o serviço de colocação e recolocação de profissionais e estagiários, com a 
-          montagem de banco de vagas.</p>
-        <p>• Banco de Consultores.<br>
-        Implantar um Banco de Profissionais Consultores, para oferta de serviços 
-          especializados.</p>
-        <p>• Plano de Saúde.<br>
-          Fazer convênio com um Plano de Saúde Regional a todos os profissionais do Crea-GO.</p>
-        <p>• Extensão.<br>
-          Patrocinar cursos de extensão aos profissionais do Crea-GO.</p>
-        <p>• Descentraliazação.<br>
-        Fazer a gestão junto ao Confea para a descentralização das Mútuas estaduais, 
-        conforme aprovado no 7o Congresso Nacional dos Profissionais em Gramado 
-          (Setembro/2013).</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="modal fade" id="p15" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">CREA + Sociedade</h4>
-      </div>
-      <div class="modal-body">
-        <p>CREA + TECNOLOGIA PARA A SOCIEDADE.</p>
-        <p>• Desenvolvimento de aplicativo para smartphone direcionado à Sociedade, com as
-        seguintes finalidades: Consultar registro do profissional no Crea-GO; Encaminhar 
-        denúncias ao Departamento de Fiscalização do Crea-GO (com anexação digital de 
-        fotos de obras/serviços com as respectivas coordenadas geográficas); acompanhar os 
-          locais percorridos pela fiscalização do Crea-GO via Google Maps.</p>
-
-        <p>• Implantar um Call Center com chamadas gratuitas (0800).</p>
-        <p>• Reestruturar a Assessoria de Defesa de Interesse do Consumidor.</p>
-        <p>• PROGRAMA + PERTO DE VOCÊ.</p>
-        <p>• Unidade de atendimento Móvel.<br>
-        Criar Unidade Móvel equipada para visitar os bairros mais afastados da capital e os 
-        municípios sem inspetorias, para orientação e prestação de serviços aos profissionais e 
-          à comunidade.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="p16" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">Banco de Consultores</h4>
-      </div>
-      <div class="modal-body">
-        <p>• Banco de Consultores.<br>
-        Implantar um Banco de Profissionais Consultores, para oferta de serviços 
-          especializados.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="p17" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">Inspetorias mais Autônomas</h4>
-      </div>
-      <div class="modal-body">
-        <p>• Fortalecimento das sedes próprias.<br>
-        Dar abertura e funcionalidade às atuais inspetorias, criando condições para envolver 
-          os profissionais e toda a comunidade, na discussão de temas de interesse comum.</p>
-
-        <p>• Parceria com as Entidades Classistas.<br>
-        Oferecer às Entidades de Classe da área tecnológica espaço nas Inspetorias para 
-          estabelecer e desenvolver suas atividades administrativas e institucionais.</p>
-
-        <p>• Parceria com as Prefeituras.<br>
-        Viabilizar a participação direta dos Inspetores nos convênios firmados com as 
-          prefeituras na área da fiscalização, da engenharia pública e da agronomia pública.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="p18" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">CREA + Entidades de Classe</h4>
-      </div>
-      <div class="modal-body">
-        <p>• Entidades de Classe.<br>
-        Trabalho conjunto com as Entidades de Classe para capacitação técnica dos 
-        profissionais e o fortalecimento dessas instituições perante os associados e a 
-          sociedade.</p>
-        <p>• Sindicatos e Associações.<br>
-        Apoio às ações de fiscalização junto aos órgãos públicos e privados para o 
-        cumprimento do piso salarial e da exigência de contratação de profissionais 
-          legalmente habilitados para os cargos técnicos.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="p19" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">Funcionários + Valorização</h4>
-      </div>
-      <div class="modal-body">
-        <p>• Capacitação.<br>
-        Instituir um Programa de desenvolvimento e capacitação permanente dos 
-          colaboradores da capital e interior.</p>
-
-        <p>• Qualificação.<br>
-        Celebrar convênio com a ASCREAGO para patrocinar cursos de formação de líderes, 
-        incremento de trabalho em equipe, convivência, planejamento, administração de 
-          tempo, processos de delegação e orientação para desenvolvimento de projetos.</p>
-
-        <p>• Política Salarial.<br>
-          Efetuar estudo imediato, visando corrigir possíveis desequilíbrios salariais.</p>
-
-        <p>• Participação.<br>
-        Realizar uma administração participativa e democrática, com um canal aberto, 
-          permanente, entre a administração e os colaboradores.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
 <!-- END Modal das Propostas -->
 
 <!-- START Modal das Fotos -->
-
-<div class="modal fade" id="f01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+  <div ng-controller="photosCtrl">
+    <div class="modal fade" id="f{{photo.id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" ng-repeat="photo in photos">
+      <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="myModalLabel">Apresentação e discussão das propostas de trabalho para a gestão 2015/2018 CREA -GO.</h4>
-            </div>
-            <div class="modal-body">
-                <img src="img/gallery/gallery-francisco-1.jpg" alt="" class="img-responsive">
-            </div>
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">{{photo.description}}</h4>
+          </div>
+          <div class="modal-body">
+            <img src="{{photo.image_url}}" alt="" class="img-responsive">
+          </div>
         </div>
+      </div>
     </div>
-</div>
-
-<div class="modal fade" id="f02" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="myModalLabel">Francisco Almeida e o engenheiro Walter Santana em Morrinhos, visitando o ex-governador do Estado Helenês Cândido</h4>
-            </div>
-            <div class="modal-body">
-                <img src="img/gallery/gallery-francisco-2.jpg" alt="" class="img-responsive">
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="f03" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="myModalLabel">Em campanha, apresentando e discutindo propostas com os apoiadores.</h4>
-            </div>
-            <div class="modal-body">
-                <img src="img/gallery/gallery-francisco-3.jpg" alt="" class="img-responsive">
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="f04" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="myModalLabel">Profissionais da Engenharia apoiadores da candidatura de Francisco Almeida ao Crea/MútuaProfissionais da Engenharia apoiadores da candidatura de Francisco Almeida ao Crea/Mútua.</h4>
-            </div>
-            <div class="modal-body">
-                <img src="img/gallery/gallery-francisco-4.jpg" alt="" class="img-responsive">
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="f05" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="myModalLabel">A colaboradora do Crea-GO, Faustiana Cesar Rodrigues, recebendo a inscrição do canditato à presidência Francisco Almeida</h4>
-            </div>
-            <div class="modal-body">
-                <img src="img/gallery/gallery-francisco-5.jpg" alt="" class="img-responsive">
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="f06" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="myModalLabel">Aguardando para a inscrição da candidatura à presidência do CREA-GO. </h4>
-            </div>
-            <div class="modal-body">
-                <img src="img/gallery/gallery-francisco-6.jpg" alt="" class="img-responsive">
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="f07" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="myModalLabel">Gilson Mota, Francisco Almeida e Luiz Carlos Carneiro momentos antes da inscrição de chapa às eleições 2014 no Sistema Crea/Mútua</h4>
-            </div>
-            <div class="modal-body">
-                <img src="img/gallery/gallery-francisco-7.jpg" alt="" class="img-responsive">
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="f08" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="myModalLabel">Lideranças classista apoiadores ao candidato Francisco Almeida nas eleições do Crea Goiás em 2014</h4>
-            </div>
-            <div class="modal-body">
-                <img src="img/gallery/gallery-francisco-8.jpg" alt="" class="img-responsive">
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="f09" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="myModalLabel">Liderança da Engenharia Elétrica em apoio à candidatura.</h4>
-            </div>
-            <div class="modal-body">
-                <img src="img/gallery/gallery-francisco-9.jpg" alt="" class="img-responsive">
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="f10" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="myModalLabel">Apresentando as propostas de trabalho para a gestão 2015/2018 CREA -GO aos líderes da Engenharia e Agronomia em Goiás.</h4>
-            </div>
-            <div class="modal-body">
-                <img src="img/gallery/gallery-francisco-10.jpg" alt="" class="img-responsive">
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="f11" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="myModalLabel">Francisco Almeida com equipe de trabalho em reunião com o geólogo Romero Queiroz, chefe do núcleo de geologia da Anglo American.</h4>
-            </div>
-            <div class="modal-body">
-                <img src="img/gallery/gallery-francisco-11.jpg" alt="" class="img-responsive">
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="f12" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="myModalLabel">O candidato Francisco Almeida durante reunião com o presidente da AGECO geólogo Fernando Duarte.</h4>
-            </div>
-            <div class="modal-body">
-                <img src="img/gallery/gallery-francisco-12.jpg" alt="" class="img-responsive">
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="f13" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="myModalLabel">Apresentando e discutindo propostas com Engenheiros de Catalão.</h4>
-            </div>
-            <div class="modal-body">
-                <img src="img/gallery/gallery-francisco-13.jpg" alt="" class="img-responsive">
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="f14" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="myModalLabel">Com líderes Engenheiros e Agrônomos de Catalão.</h4>
-            </div>
-            <div class="modal-body">
-                <img src="img/gallery/gallery-francisco-14.jpg" alt="" class="img-responsive">
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="f15" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="myModalLabel">Em reunião com Engenheiros e Agrônomos do DNIT.</h4>
-            </div>
-            <div class="modal-body">
-                <img src="img/gallery/gallery-francisco-15.jpg" alt="" class="img-responsive">
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="f16" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="myModalLabel">Em reunião com Engenheiros e Agrônomos do DNIT.</h4>
-            </div>
-            <div class="modal-body">
-                <img src="img/gallery/gallery-francisco-16.jpg" alt="" class="img-responsive">
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="f17" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="myModalLabel">Em reunião com Engenheiros e Agrônomos do DNIT.</h4>
-            </div>
-            <div class="modal-body">
-                <img src="img/gallery/gallery-francisco-17.jpg" alt="" class="img-responsive">
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="f18" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="myModalLabel">Francisco Almeida, candidato ao Crea-GO, em seu comitê, reunido com lideranças classistas.</h4>
-            </div>
-            <div class="modal-body">
-                <img src="img/gallery/gallery-francisco-18.jpg" alt="" class="img-responsive">
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="f19" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="myModalLabel">Em entrevista ao DM TV — em Diário da Manhã.</h4>
-            </div>
-            <div class="modal-body">
-                <img src="img/gallery/gallery-francisco-19.jpg" alt="" class="img-responsive">
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="f20" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="myModalLabel">Engenheiros Agrônomos da Agrodefesa em visita ao comitê do candidato ao Crea GO Francisco Almeida.</h4>
-            </div>
-            <div class="modal-body">
-                <img src="img/gallery/gallery-francisco-20.jpg" alt="" class="img-responsive">
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="f21" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="myModalLabel">Recebendo apoio do presidente Unear, Caldas Novas e Rio Quente, o eng. eletricista Frederico Nassif.</h4>
-            </div>
-            <div class="modal-body">
-                <img src="img/gallery/gallery-francisco-21.jpg" alt="" class="img-responsive">
-            </div>
-        </div>
-    </div>
-</div>
-    
-<div class="modal fade" id="f22" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="myModalLabel">Apresentando as propostas para o CREA + PROFISSIONAL aos mais de 35 profissionais da área da construção!</h4>
-            </div>
-            <div class="modal-body">
-                <img src="img/gallery/gallery-francisco-22.jpg" alt="" class="img-responsive">
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="f23" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="myModalLabel">Reunião com os profissionais de Anápolis, administração descentralizada, mais autonomia financeira e administrativa.</h4>
-            </div>
-            <div class="modal-body">
-                <img src="img/gallery/gallery-francisco-23.jpg" alt="" class="img-responsive">
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="f24" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="myModalLabel">Em reunião com as Lideranças da EMATER , hipotecando o voto e apoio.</h4>
-            </div>
-            <div class="modal-body">
-                <img src="img/gallery/gallery-francisco-24.jpg" alt="" class="img-responsive">
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="fengagro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="myModalLabel">Parabéns aos colegas Engenheiros Agrônomos!</h4>
-            </div>
-            <div class="modal-body">
-                <img src="img/gallery/engagro.png" alt="" class="img-responsive">
-            </div>
-        </div>
-    </div>
-</div>
-    
-<div class="modal fade" id="fprofessor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="myModalLabel">Aos queridos mestres, o nosso MUITO OBRIGADA!</h4>
-            </div>
-            <div class="modal-body">
-                <img src="img/gallery/professores.png" alt="" class="img-responsive">
-            </div>
-        </div>
-    </div>
-</div>
+  </div>
 <!-- END Modal das Fotos -->
 	
-	<!-- extra section -->	
-	<section id="fotos" class="extra">
-		<div class="container">
-		
-			<!-- gallery -->
-			<div class="gallery">
-				<h2 class="heading">Fotos</h2>
-				
-				<div id="grid" class="row gallery-inner">
-                    <div class="col-md-4 col-sm-6 mix mix_all cat-1">
-                        <div class="gallery-frame">
-                            <a data-toggle="modal" data-target="#f01"><img src="img/gallery/gallery-francisco-1.jpg" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 mix mix_all cat-1">
-                        <div class="gallery-frame">
-                            <a data-toggle="modal" data-target="#f02"><img src="img/gallery/gallery-francisco-2.jpg" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 mix mix_all cat-1">
-                        <div class="gallery-frame">
-                            <a data-toggle="modal" data-target="#f03"><img src="img/gallery/gallery-francisco-3.jpg" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 mix mix_all cat-1">
-                        <div class="gallery-frame">
-                            <a data-toggle="modal" data-target="#f04"><img src="img/gallery/gallery-francisco-4.jpg" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 mix mix_all cat-1">
-                        <div class="gallery-frame">
-                            <a data-toggle="modal" data-target="#f05"><img src="img/gallery/gallery-francisco-5.jpg" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 mix mix_all cat-1">
-                        <div class="gallery-frame">
-                            <a data-toggle="modal" data-target="#f06"><img src="img/gallery/gallery-francisco-6.jpg" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 mix mix_all cat-1">
-                        <div class="gallery-frame">
-                            <a data-toggle="modal" data-target="#f07"><img src="img/gallery/gallery-francisco-7.jpg" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 mix mix_all cat-1">
-                        <div class="gallery-frame">
-                            <a data-toggle="modal" data-target="#f08"><img src="img/gallery/gallery-francisco-8.jpg" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 mix mix_all cat-1">
-                        <div class="gallery-frame">
-                            <a data-toggle="modal" data-target="#f09"><img src="img/gallery/gallery-francisco-9.jpg" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 mix mix_all cat-1">
-                        <div class="gallery-frame">
-                            <a data-toggle="modal" data-target="#f10"><img src="img/gallery/gallery-francisco-10.jpg" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 mix mix_all cat-1">
-                        <div class="gallery-frame">
-                            <a data-toggle="modal" data-target="#f11"><img src="img/gallery/gallery-francisco-11.jpg" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 mix mix_all cat-1">
-                        <div class="gallery-frame">
-                            <a data-toggle="modal" data-target="#f12"><img src="img/gallery/gallery-francisco-12.jpg" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 mix mix_all cat-1">
-                        <div class="gallery-frame">
-                            <a data-toggle="modal" data-target="#f13"><img src="img/gallery/gallery-francisco-13.jpg" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 mix mix_all cat-1">
-                        <div class="gallery-frame">
-                            <a data-toggle="modal" data-target="#f14"><img src="img/gallery/gallery-francisco-14.jpg" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 mix mix_all cat-1">
-                        <div class="gallery-frame">
-                            <a data-toggle="modal" data-target="#f15"><img src="img/gallery/gallery-francisco-15.jpg" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 mix mix_all cat-1">
-                        <div class="gallery-frame">
-                            <a data-toggle="modal" data-target="#f16"><img src="img/gallery/gallery-francisco-16.jpg" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 mix mix_all cat-1">
-                        <div class="gallery-frame">
-                            <a data-toggle="modal" data-target="#f17"><img src="img/gallery/gallery-francisco-17.jpg" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 mix mix_all cat-1">
-                        <div class="gallery-frame">
-                            <a data-toggle="modal" data-target="#f18"><img src="img/gallery/gallery-francisco-18.jpg" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 mix mix_all cat-1">
-                        <div class="gallery-frame">
-                            <a data-toggle="modal" data-target="#f19"><img src="img/gallery/gallery-francisco-19.jpg" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 mix mix_all cat-1">
-                        <div class="gallery-frame">
-                            <a data-toggle="modal" data-target="#f20"><img src="img/gallery/gallery-francisco-20.jpg" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 mix mix_all cat-1">
-                        <div class="gallery-frame">
-                            <a data-toggle="modal" data-target="#f21"><img src="img/gallery/gallery-francisco-21.jpg" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 mix mix_all cat-1">
-                        <div class="gallery-frame">
-                            <a data-toggle="modal" data-target="#f22"><img src="img/gallery/gallery-francisco-22.jpg" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 mix mix_all cat-1">
-                        <div class="gallery-frame">
-                            <a data-toggle="modal" data-target="#f23"><img src="img/gallery/gallery-francisco-23.jpg" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 mix mix_all cat-1">
-                        <div class="gallery-frame">
-                            <a data-toggle="modal" data-target="#f24"><img src="img/gallery/gallery-francisco-24.jpg" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 mix mix_all cat-1">
-                        <div class="gallery-frame">
-                            <a data-toggle="modal" data-target="#fengagro"><img src="img/gallery/engagro.png" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 mix mix_all cat-1">
-                        <div class="gallery-frame">
-                            <a data-toggle="modal" data-target="#fprofessor"><img src="img/gallery/professores.png" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-			<!-- gallery end -->
+  <!-- extra section -->	
+  <section id="fotos" class="extra">
+    <div class="container">
 
-		</div><!-- .container -->
-	</section>
+      <!-- gallery -->
+      <div class="gallery">
+        <h2 class="heading">Fotos</h2>
+
+        <div id="grid" class="row gallery-inner" ng-controller="photosCtrl">
+          <div class="col-md-4 col-sm-6 mix mix_all cat-1" ng-repeat="photo in photos">
+            <div class="gallery-frame">
+              <a data-toggle="modal" data-target="#f{{photo.id}}">
+                <img src="{{photo.image_url}}" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <!-- gallery end -->
+      
+    </div>
+
+    <!-- .container -->
+  </section>
 	<!-- extra section end -->
 	
 	<!-- contact section -->
@@ -1357,7 +417,7 @@
 	<script src="js/twitterFetcher_v10_min.js"></script>
 	<script src="js/parsley.min.js"></script>
 	<script src="js/custom.js"></script><!-- custom -->
-
+    
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -1368,5 +428,12 @@
   ga('send', 'pageview');
 
 </script>
+<script>
+  var myApp = angular.module('myApp',[]);
 
-</body></html>
+  myApp.controller('GalleryController', ['$scope', function($scope) {
+    $scope.photos = 'Hola!';
+  }]);
+</script>
+</body>
+</html>
